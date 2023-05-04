@@ -28,7 +28,16 @@ const ChartRow = (): JSX.Element => {
         <div className="title">
           <h2>Spending - Last 7 days</h2>
         </div>
-        <ChartContainer></ChartContainer>
+        <ChartContainer>
+          {rowData.map((data, index) => (
+            <CreateChart
+              rowData={rowData}
+              maxAmount={maxAmount}
+              index={index}
+              key={index}
+            />
+          ))}
+        </ChartContainer>
       </div>
       <hr />
       <div className="bottomComponent">
