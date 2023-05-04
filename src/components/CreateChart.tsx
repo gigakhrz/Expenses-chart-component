@@ -17,7 +17,7 @@ const CreateChart = (props: CreateChartProps): JSX.Element => {
         className="column"
       >
         <div className="hoverAmount">
-          <h5>{props.rowData[props.index]?.amount}</h5>
+          <h5>{props.rowData[props.index]?.amount}$</h5>
         </div>
       </Column>
       <p>{props.rowData[props.index]?.day}</p>

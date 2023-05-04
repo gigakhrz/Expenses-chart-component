@@ -23,4 +23,8 @@ const MainContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 16px;
+  background-color: #f8e9dd;
+  @media (min-width: 1024px) {
+    gap: 24px;
+  }
 `;
