@@ -31,6 +31,7 @@ const ChartRow = (): JSX.Element => {
         <ChartContainer>
           {rowData.map((data, index) => (
             <CreateChart
+              data={data}
               rowData={rowData}
               maxAmount={maxAmount}
               index={index}

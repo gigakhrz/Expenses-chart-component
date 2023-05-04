@@ -4,6 +4,7 @@ interface CreateChartProps {
   rowData: chartRowTypes[];
   maxAmount: number;
   index: number;
+  data: {};
 }
 const CreateChart = (props: CreateChartProps): JSX.Element => {
   const height = (props.rowData[props.index]?.amount / props.maxAmount) * 150;
