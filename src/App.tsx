@@ -1,12 +1,26 @@
-import { useState } from "react";
 import GlobalStyles from "./GlobalStyles";
+import styled from "styled-components";
+import BalanceAmount from "./components/BalanceAmount";
+import ChartRow from "./components/ChartRow";
 
 function App() {
   return (
-    <div>
+    <MainContainer>
       <GlobalStyles />
-    </div>
+      <BalanceAmount />
+      <ChartRow />
+    </MainContainer>
   );
 }
 
 export default App;
+
+const MainContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+`;
